@@ -1,4 +1,3 @@
-
 interface EWSInteractModel {
     agentId: string,
     convoId: string,
@@ -22,9 +21,9 @@ const ws = new WebSocket(`wss://vg-ws-edge.moeaymandev.workers.dev/ws`); //REPLA
 ws.onopen = () => {
   
     const interactObject: EWSInteractModel = {
-        agentId: "v72km4duyj1v4xg",
+        agentId: "ztzeio424v0gb5hu",
         convoId: "anything_idk",
-        bucket: "voiceglow-eu", // can be either "voiceglow-eu" or "(default)" -> NA region
+        bucket: "(default)", // can be either "voiceglow-eu" or "(default)" -> NA region
         prompt: "Hi!!",
     };
 
