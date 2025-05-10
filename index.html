@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>Voiceglow Widget Example</p>
+    <script>
+        function initVG() {
+            window.VG_CONFIG = {
+                ID: "ztzeio424v0gb5hu", // your agent id
+                region: 'na', // North America region
+                render: 'popup', // popup or full-width
+                stylesheets: [
+                    // Base Voiceglow CSS
+                    "./vg-build/styles.css",
+                ],
+                // Optional configurations
+                // autostart: true, // Whether to autostart the chatbot
+                // userID: 'USER_ID', // Custom user ID if needed
+            }
+            var VG_SCRIPT = document.createElement("script");
+            VG_SCRIPT.src = "./vg-build/vg_bundle.js";
+            document.body.appendChild(VG_SCRIPT);
+        }
+        initVG();
+    </script>
+</body>
+</html>
